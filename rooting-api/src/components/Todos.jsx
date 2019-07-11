@@ -1,12 +1,13 @@
 import React from 'react';
+import Todo from './Todo'
 
-const Todos = () => {
+const Todos = ({todos}) => {
     return(
         <div>
             <ul>
-                <li>aze</li>
-                <li>aze</li>
-                <li>aze</li>
+                {todos && todos.map(todo => (
+                    <Todo key={todo.id} todo={todo}/>
+                ))}
             </ul>
         </div>
     )

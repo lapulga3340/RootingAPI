@@ -25,7 +25,7 @@ class App extends Component {
     return (
       <div className="App">
         <header className="App-header">Le routage</header>
-        <Todos/>
+        <Todos todos={this.state.todos}/>
       </div>
     );
   }
